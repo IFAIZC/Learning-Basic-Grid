@@ -1,59 +1,173 @@
 body {
+    background-color: #206df2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    width: 100%;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    width: 100vw;
     height: 100vh;
-    gap: 5px;
 }
 
-.header {
+
+
+/* left side bar */
+.logo {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    background-color: #206df2;
+    color: white;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column: 1/11;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.left-side-bar {
+    grid-column: 1 / 4;
+    grid-row: 3 / 21;
+    background-color: #206df2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 20px;
+    padding-top: 18px;
+}
+
+.left-side-bar a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.top-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bottom-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+
+
+/* search bar section */
+.search-bar {
+    grid-column: 4 / 16;
+    grid-row: 1 / 3;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+  .search-box {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #206df2;;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .search-button {
+    height: 40px;
+    border: none;
+    background-color: #206df2;;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 0 20px;
+    cursor: pointer;
+    outline: none;
+  }
+
+/* profile top section */
+.profile-small {
+    grid-column: 16 / 21;
+    grid-row: 1 / 3;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.username h3{
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.profile-picture {
+    width: 55px; /* Set the width of the profile picture */
+    height: 55px; /* Set the height of the profile picture */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image scales properly */
+    border: 2px solid #206df2;; /* Optional: Adds a border */
+}
+
+
+
+
+
+
+
+
+.welcome-user {
+    grid-column: 4 / 15;
+    grid-row: 3 / 5;
+    background-color: #614f4f;
+}
+
+.right-button {
+    grid-column: 15 / 21;
+    grid-row: 3 / 5;
     background-color: aquamarine;
 }
 
-.sidebar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #aeaeae;
-    grid-column: 1/3;
-    grid-row: 2/10;
+.projects {
+    grid-column: 4 / 17;
+    grid-row: 5 / 21;
+    background-color: #8d3434;
 }
 
-.nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #c95757;
-    grid-column: 3/11;
+.announcements {
+    grid-column: 17 / 21;
+    grid-row: 5 / 13;
+    background-color: #a49a9a;
 }
 
-.article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f2f2f2;
-    grid-column : 3/11;
-    grid-row: 3/10;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #664bab;
-    grid-column: 1/11;
+.trending {
+    grid-column: 17 / 21;
+    grid-row: 13 / 21;
+    background-color: #696868;
 }
 
