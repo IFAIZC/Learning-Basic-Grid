@@ -256,6 +256,7 @@ a {
     height: 100%;
     justify-content: space-evenly;
     align-items: flex-start;
+    padding-right: 10px;
 }
 
 .card-announcement {
@@ -266,8 +267,6 @@ a {
     padding: 10px;
     border-radius: 20px;
 }
-
-
 
 .announcements h4 {
     margin: 0;
@@ -286,6 +285,34 @@ a {
 .trending {
     grid-column: 17 / 21;
     grid-row: 13 / 21;
-    background-color: #696868;
+
+    background-color: #d2d2d2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-right: 10px;
 }
 
+.card-trending {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.trending h4 {
+    margin: 0;
+}
+
+.trending p {
+    margin: 0;
+}
+
+.trending h3 {
+    margin: 0;
+}
