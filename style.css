@@ -217,14 +217,44 @@ a {
   }
 
 
-
-
 /* main content for project showcase */
 .projects {
     grid-column: 4 / 17;
     grid-row: 5 / 21;
-    background-color: #8d3434;
+    background-color: #d2d2d2;
+
+    /* making a new grid inside a grid */
+    display: grid; /* Define this section as a grid */
+    grid-template-columns: repeat(3, 1fr); /* Divide into 3 equal columns */
+    grid-template-rows: repeat(2, 280px); /* Divide into 2 equal rows */
+    gap: 20px; /* Add spacing between the cards */
+    padding: 20px; /* Add some padding inside the projects container */
 }
+
+.projects div {
+    background-color: #ffffff; /* Background for individual cards */
+    border: 2px solid #206df2; /* Optional border for cards */
+    border-radius: 10px; /* Rounded corners for cards */
+    display: flex; /* Center content inside cards */
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #206df2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* sidd bar announcements */
